@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render expenseListItem with fixture date 1`] = `
+<li
+  data-id="2"
+>
+  <h3>
+    <Link
+      replace={false}
+      to="/edit/2"
+    >
+      rent
+    </Link>
+  </h3>
+  <p>
+    <strong>
+      Amount:
+    </strong>
+     
+    109500
+    <strong>
+      CreatedAt:
+    </strong>
+     
+    -432000000
+  </p>
+</li>
+`;
