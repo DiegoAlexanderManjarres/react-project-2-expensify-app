@@ -1,7 +1,7 @@
-import React from 'react';
-import Parser from 'html-react-parser';
-import moment from 'moment';
-import { SingleDatePicker } from 'react-dates';
+import React from 'react'
+import Parser from 'html-react-parser'
+import moment from 'moment'
+import { SingleDatePicker } from 'react-dates'
 
 export default class ExpenseForm extends React.Component {
  	constructor(props) {
@@ -90,7 +90,7 @@ export default class ExpenseForm extends React.Component {
 					<SingleDatePicker 
 						date={this.state.createdAt}
 						onDateChange={this.onDateChange}
-						focused={this.state.calendarFcused}
+						focused={this.state.calendarFocused}
 						onFocusChange={this.onFocusChange}
 						numberOfMonths={1}
 						isOutsideRange={() => false}
