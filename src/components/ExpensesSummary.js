@@ -6,13 +6,14 @@ import numeral from 'numeral'
 
 export const ExpensesSummary = ({ expenses }) => {
    const total = numeral(selectExpenseTotal(expenses) / 100).format('$0,0.00')
+   const expensesWord = expenses.length === 1 ? 'expense' : 'expenses'
    return (            
       <React.Fragment>
          { expenses.length ?
             <div>
                <div>Summary</div>
-               <p><strong> Expenses available: </strong>{expenses.length}</p>
-               <p><strong> Expenses Total: </strong>{total}</p>
+               <p><strong> {expensesWord} available: </strong>{expenses.length}</p>
+               <p><strong> {expensesWord} Total: </strong>{total}</p>
             </div>
             : <div>Add expense</div>
          }     
