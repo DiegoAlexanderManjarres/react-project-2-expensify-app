@@ -51,9 +51,9 @@ export default class ExpenseForm extends React.Component {
 				...this.state, 
 				error: `
 				   Please provide 
-					<strong>description</strong> 
+					<strong> description </strong> 
 					and 
-					<strong>amount</strong>.
+					<strong> amount </strong>.
 				`
 			}));
 		} else {
