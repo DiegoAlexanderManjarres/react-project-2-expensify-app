@@ -2,27 +2,31 @@
 
 exports[`Viewing 0 expenses 1`] = `
 <Fragment>
-  <div>
+  <h2>
     Add expense
-  </div>
+  </h2>
 </Fragment>
 `;
 
 exports[`Viewing 1 expenses to talling $94.34 1`] = `
 <Fragment>
   <div>
-    <div>
+    <h2>
       Summary
-    </div>
+    </h2>
     <p>
       <strong>
-         Expenses available: 
+         
+        expense
+         available: 
       </strong>
       1
     </p>
     <p>
       <strong>
-         Expenses Total: 
+         
+        expense
+         Total: 
       </strong>
       $94.34
     </p>
@@ -33,18 +37,22 @@ exports[`Viewing 1 expenses to talling $94.34 1`] = `
 exports[`Viewing 2 expenses to talling $94.34 1`] = `
 <Fragment>
   <div>
-    <div>
+    <h2>
       Summary
-    </div>
+    </h2>
     <p>
       <strong>
-         Expenses available: 
+         
+        expenses
+         available: 
       </strong>
       2
     </p>
     <p>
       <strong>
-         Expenses Total: 
+         
+        expenses
+         Total: 
       </strong>
       $94.34
     </p>

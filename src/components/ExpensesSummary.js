@@ -11,11 +11,11 @@ export const ExpensesSummary = ({ expenses }) => {
       <React.Fragment>
          { expenses.length ?
             <div>
-               <div>Summary</div>
+               <h2>Summary</h2>
                <p><strong> {expensesWord} available: </strong>{expenses.length}</p>
                <p><strong> {expensesWord} Total: </strong>{total}</p>
             </div>
-            : <div>Add expense</div>
+            : <h2>Add expense</h2>
          }     
       </React.Fragment>       
    )
