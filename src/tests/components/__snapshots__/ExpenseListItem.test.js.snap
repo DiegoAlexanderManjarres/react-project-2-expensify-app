@@ -14,15 +14,13 @@ exports[`should render expenseListItem with fixture date 1`] = `
   </h3>
   <p>
     <strong>
-      Amount:
+       Amount: 
     </strong>
-     
-    109500
+    $1,095.00
     <strong>
-      CreatedAt:
+       CreatedAt: 
     </strong>
-     
-    -432000000
+    December 26th, 1969
   </p>
 </li>
 `;

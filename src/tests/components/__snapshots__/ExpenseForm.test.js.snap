@@ -35,6 +35,7 @@ exports[`should render ExpenseForm correctly 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -152,6 +153,7 @@ exports[`should render error for invalid form submission 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -243,7 +245,7 @@ exports[`should render error for invalid form submission 2`] = `
     <strong
       key="1"
     >
-      description
+       description 
     </strong>
      
 					and 
@@ -251,7 +253,7 @@ exports[`should render error for invalid form submission 2`] = `
     <strong
       key="3"
     >
-      amount
+       amount 
     </strong>
     .
 				
@@ -289,6 +291,7 @@ exports[`should render error for invalid form submission 2`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -406,6 +409,7 @@ exports[`should render expense form with expense data 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -523,6 +527,7 @@ exports[`should set amount if invalid input 12.1220 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -640,6 +645,7 @@ exports[`should set amount if valid input 23.50 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -757,6 +763,7 @@ exports[`should set description on input change 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
@@ -874,6 +881,7 @@ exports[`should set note on textarea change 1`] = `
       focused={false}
       hideKeyboardShortcutsPanel={false}
       horizontalMargin={0}
+      horizontalMonthPadding={13}
       id="date"
       initialVisibleMonth={null}
       inputIconPosition="before"
