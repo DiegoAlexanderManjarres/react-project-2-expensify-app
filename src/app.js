@@ -7,6 +7,7 @@ import 'normalize.css/normalize.css'
 import 'react-dates/lib/css/_datepicker.css'
 import 'react-dates/initialize'
 import './styles/styles.scss' 
+import moment from 'moment'
 
 
 const store = configureStore();
@@ -18,3 +19,4 @@ const jsx = (
 )
 
 ReactDOM.render(jsx, document.getElementById('app'));
+
