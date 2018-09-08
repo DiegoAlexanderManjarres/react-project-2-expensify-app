@@ -7,7 +7,8 @@ import 'normalize.css/normalize.css'
 import 'react-dates/lib/css/_datepicker.css'
 import 'react-dates/initialize'
 import './styles/styles.scss' 
-import moment from 'moment'
+import './firebase/firebase'
+import './playground/promises'
 
 
 const store = configureStore();
