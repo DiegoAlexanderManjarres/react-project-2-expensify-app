@@ -131,4 +131,10 @@ export { firebase, database as default }
 //    createdAt: '9/25/2018'
 // })
 
+/* database.ref('expenses').once('value').then(snapshot => {
+  const value = snapshot.val() 
+  const ids =  Object.keys(value)
+  return ids.map(id => ({id, ...value[id]}))
+})
+ */
 
