@@ -55,8 +55,15 @@ export const startSetExpenses = () => (dispatch) => (
 			snapshot.forEach(childSnapshots => {
 				expenses.push({ id: childSnapshots.key, ...childSnapshots.val() })
 			})
-			dispatch(setExpenses(expenses))//return expenses					
-		})//.then(expenses => dispatch(setExpenses(expenses)) )
+			dispatch(setExpenses(expenses))				
+		})
 	)
+
+export const startRemoveExpense = ({ id }) => (dispatch) => (
+	database.ref(`expenses/${id}`).set(null)
+		.then(() => dispatch(removeExpense({ id })))
+)
+
+	
 		 		
  

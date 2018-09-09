@@ -138,3 +138,4 @@ export { firebase, database as default }
 })
  */
 
+// database.ref('expenses/-LLw7IVfwyCu4SehMrfD').set(null)
