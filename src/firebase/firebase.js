@@ -139,3 +139,9 @@ export { firebase, database as default }
  */
 
 // database.ref('expenses/-LLw7IVfwyCu4SehMrfD').set(null)
+// const id = '-LLzbBNlD2fI9zmFil2f'
+// database.ref(`expenses/${id}`).update({
+//   amount: 16000,
+//   createdAt: 1936518039201,
+//   note: 'fluf'
+// })
