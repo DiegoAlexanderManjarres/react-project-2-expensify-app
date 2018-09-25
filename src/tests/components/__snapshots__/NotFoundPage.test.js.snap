@@ -5,7 +5,7 @@ exports[`should render NotFoundPage correctly 1`] = `
   404! page not found you put the finger wrong!
   <Link
     replace={false}
-    to="/"
+    to="/dashboard"
   >
     Go Home
   </Link>

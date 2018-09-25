@@ -23,6 +23,7 @@ export default class ExpenseForm extends React.Component {
 		this.setState(() => ({ description }));
   }
   	onNoteChange = (e) => {
+		e.preventDefault()  
 		const note = e.target.value;
 		this.setState(() => ({ note }))
   }
@@ -97,6 +98,7 @@ export default class ExpenseForm extends React.Component {
 						/>
 					<textarea 
 						placeholder="Add a note for your expense (optional)"
+						value={this.state.note}
 						onChange={this.onNoteChange}/>
 					<button>{this.state.titleButton}</button>
 				</form>
