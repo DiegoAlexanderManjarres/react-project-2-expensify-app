@@ -13,7 +13,7 @@ export default class ExpenseForm extends React.Component {
 			createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
 			calendarFocused: false,
 			error: '',
-			titleButton: props.expense? 'Update' : 'Add Expense'
+			titleButton: props.expense? 'Save Expense' : 'Add Expense'
 		}
   }
   
@@ -69,22 +69,24 @@ export default class ExpenseForm extends React.Component {
 		}
    }
    render(){
-		return (
-			<div>
+		return (	
+			<form className="form" onSubmit={this.onSubmit}>
 				{
-				this.state.error && <p>{Parser(this.state.error)}</p>
+					this.state.error && 
+					<p className="form__error">{Parser(this.state.error)}</p>
 				}
-				<form onSubmit={this.onSubmit}>        
 					<input
 						type='text'
 						placeholder='Description'
 						autoFocus
+						className="text-input"
 						value={this.state.description}
 						onChange={this.onDescriptionChange}
 					/>
 					<input 
 						type="text"
 						placeholder="Amount"
+						className="text-input"
 						value={this.state.amount}
 						onChange={this.onAmountChange}            
 					/>
@@ -95,14 +97,18 @@ export default class ExpenseForm extends React.Component {
 						onFocusChange={this.onFocusChange}
 						numberOfMonths={1}
 						isOutsideRange={() => false}
+						block
 						/>
 					<textarea 
 						placeholder="Add a note for your expense (optional)"
 						value={this.state.note}
-						onChange={this.onNoteChange}/>
-					<button>{this.state.titleButton}</button>
-				</form>
-			</div>
+						onChange={this.onNoteChange}
+						className="textarea"/>
+					<div>
+						<button className="button">{this.state.titleButton}</button>
+					</div>	
+			</form>
+			
 		)
   }
 }

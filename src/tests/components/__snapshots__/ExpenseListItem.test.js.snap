@@ -2,25 +2,31 @@
 
 exports[`should render expenseListItem with fixture date 1`] = `
 <li
+  className="list-item-wrapper"
   data-id="2"
 >
-  <h3>
-    <Link
-      replace={false}
-      to="/edit/2"
+  <Link
+    className="list-item"
+    replace={false}
+    to="/edit/2"
+  >
+    <div>
+      <h3
+        className="list-item__title"
+      >
+        rent
+      </h3>
+      <strong
+        className="list-item__sub-title"
+      >
+        December 26th, 1969
+      </strong>
+    </div>
+    <h3
+      className="list-item__data"
     >
-      rent
-    </Link>
-  </h3>
-  <p>
-    <strong>
-       Amount: 
-    </strong>
-    $1,095.00
-    <strong>
-       CreatedAt: 
-    </strong>
-    December 26th, 1969
-  </p>
+      $1,095.00
+    </h3>
+  </Link>
 </li>
 `;

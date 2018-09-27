@@ -1,9 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`shuld correctly render loging page snapshot 1`] = `
-<section>
-  <button>
-    Login
-  </button>
+<section
+  className="box-layout"
+>
+  <div
+    className="box-loyout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Esxpensify
+    </h1>
+    <p>
+      Its time to take charge and track your expenses.
+    </p>
+    <button
+      className="button"
+    >
+      Login with Google
+    </button>
+  </div>
 </section>
 `;

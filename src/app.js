@@ -5,11 +5,12 @@ import AppRouter, { history } from './routers/AppRouter'
 import { startSetExpenses } from './actions/expenses'
 import configureStore from './store/configureStore'
 import { login, logout } from './actions/auth'
+import LoadingPage from './components/LoadingPage'
 import { firebase } from './firebase/firebase'
 import 'normalize.css/normalize.css'
 import 'react-dates/lib/css/_datepicker.css'
 import 'react-dates/initialize'
-import './styles/styles.scss' 
+import './styles/styles.sass' 
 
 const store = configureStore();
 
@@ -28,8 +29,7 @@ const renderApp = () => {
    }
 }
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'))
-
+ReactDOM.render(<LoadingPage />, document.getElementById('app'))
 
 
 firebase.auth().onAuthStateChanged(user => {
@@ -46,7 +46,40 @@ firebase.auth().onAuthStateChanged(user => {
       renderApp()
       history.push('/')
    }
-})
+}) 
+
+
+
+// ===========================================
+/* const pyramid = () => {
+   let hash = '#', dot = "", line = "\n", sot = ""
+   for(let i = 0; i < 8; i++) {
+      // hash += '#'
+      dot += '.'
+      line += '\n'      
+   }
+   for(let k = 8; k > 0; k--) { 
+      dot = dot.slice(0, k)
+      hash += '#'
+      sot += dot+hash+"\n"
+   }
+   return sot
+} */
+
+/* const pyramid = () => {
+   let hash = '#', dot = "", line = "\n", sot = ""
+   for(let i = 0; i < 8; i++) {
+      hash += '#'
+      dot += '.'
+      line += '\n'      
+   }
+   for(let k = 8; k > 0; k--) { 
+      console.log(dot)
+   }
+   
+}
+
+console.log(pyramid()) */
 
 
 

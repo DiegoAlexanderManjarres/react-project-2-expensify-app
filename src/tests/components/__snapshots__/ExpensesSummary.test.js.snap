@@ -1,61 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Viewing 0 expenses 1`] = `
-<Fragment>
-  <h2>
-    Add expense
-  </h2>
-</Fragment>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Add expense
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</div>
 `;
 
 exports[`Viewing 1 expenses to talling $94.34 1`] = `
-<Fragment>
-  <div>
-    <h2>
-      Summary
-    </h2>
-    <p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing
       <strong>
          
-        expense
-         available: 
+        1
+         
       </strong>
-      1
-    </p>
-    <p>
+      expense
+       totalling
       <strong>
          
-        expense
-         Total: 
+        $94.34
+         
       </strong>
-      $94.34
-    </p>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
   </div>
-</Fragment>
+</div>
 `;
 
 exports[`Viewing 2 expenses to talling $94.34 1`] = `
-<Fragment>
-  <div>
-    <h2>
-      Summary
-    </h2>
-    <p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing
       <strong>
          
-        expenses
-         available: 
+        2
+         
       </strong>
-      2
-    </p>
-    <p>
+      expenses
+       totalling
       <strong>
          
-        expenses
-         Total: 
+        $94.34
+         
       </strong>
-      $94.34
-    </p>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
   </div>
-</Fragment>
+</div>
 `;
