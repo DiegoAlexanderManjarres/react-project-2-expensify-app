@@ -6,7 +6,7 @@ import Header from '../components/Header'
 export const PrivateRoute = (props) => {
    const { isAuthenticated, component: Component, ...rest } = props   
    return (
-      <Route {...rest} component={props => (
+      <Route {...rest} render={props => (
          isAuthenticated ? (
             <React.Fragment>
                <Header />
