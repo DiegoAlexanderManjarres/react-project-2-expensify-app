@@ -5,7 +5,7 @@ import { Route, Redirect } from 'react-router-dom'
 export const PublicRoute = (props) => {
    const { isAuthenticated, component: Component, ...rest } = props   
    return (
-      <Route {...rest} component={props => (
+      <Route {...rest} render={props => (
          isAuthenticated 
          ? (<Redirect to="/Dashboard" />) : (<Component {...props} />) 
       )} />
